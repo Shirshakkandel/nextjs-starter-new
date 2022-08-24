@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&display=swap');
+
+@layer components {
+  .largSection {
+    @apply font-monts min-h-[100vh] flex items-center justify-center bg-primary text-text;
+  }
+  .mediumSection {
+    @apply min-h-[50vh] flex items-center justify-center bg-secondary text-primary;
+  }
+  .smallSection {
+    @apply min-h-[10vh] flex items-center justify-center bg-text text-secondary;
+  }
+}
