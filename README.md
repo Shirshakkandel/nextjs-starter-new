@@ -26,5 +26,49 @@ pnpm create next-app --example with-tailwindcss with-tailwindcss-app
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
 
-# `Install chakra ui`
+# `1)Install chakra ui`
+
+# `2)Adding colors,fonts and global variable for website`
+
+
+#  `1)Nextjs with typescript and tailwindcss`
+npx create-next-app@latest --typescript --example with-tailwindcss
+yarn add @emotion/react @emotion/css @emotion/styled
+yarn add hamburger-react
+
+# `2)Make component folder and add home folder with index.js to export all component.`
+
+# `3)check and add  fonts and colors from figma`
+ using @import url in globals.css.
+add theme:{ extend:{ fontFamily:{primary:[' ']}}} 
+
+
+#`4)add class inside global.css`
+@layer components{
+.section-wrapper,mt-section, .heading, .paragraph and mt-element.
+}
+
+@layer base {
+  html {
+    background: #fefefe;
+    @apply scroll-smooth font-primary;
+  }
+}
+
+#`5)Adding styled components`
+//utils/styledComponents.ts
+import styled from '@emotion/styled';
+
+const Flex = styled.div``;
+const Absolute = styled.div``;
+const FlexSection = styled.div``;
+const FlexItem = styled.div``;
+const Relative = styled.div``;
+const Grid = styled.div``;
+
+export { Grid, Flex, Absolute, FlexSection, FlexItem, Relative };
+
+#`6)Create CurrentSection Context`
+#`7)useWindowSize hook to calculate width and height.`
+
 

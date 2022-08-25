@@ -10,6 +10,7 @@ module.exports = {
       },
       fontFamily: {
         monts: ['Montserrat', 'sans-serif'],
+        neuro: ['Neuro', 'sans-serif'],
       },
     },
   },
